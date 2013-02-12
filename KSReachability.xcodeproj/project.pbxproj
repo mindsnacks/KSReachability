@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B32E31F916C9DC410032E7E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32E31F816C9DC410032E7E8 /* Foundation.framework */; };
+		B32E322316C9DD000032E7E8 /* KSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E322216C9DD000032E7E8 /* KSReachability.m */; };
+		B32E322416C9DD070032E7E8 /* KSReachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32E322116C9DD000032E7E8 /* KSReachability.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B32E31F316C9DC410032E7E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B32E322416C9DD070032E7E8 /* KSReachability.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B32E31F516C9DC410032E7E8 /* libKSReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKSReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32E31F816C9DC410032E7E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B32E31FC16C9DC410032E7E8 /* KSReachability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSReachability-Prefix.pch"; sourceTree = "<group>"; };
+		B32E320716C9DC410032E7E8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B32E320916C9DC410032E7E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B32E322116C9DD000032E7E8 /* KSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReachability.h; sourceTree = SOURCE_ROOT; };
+		B32E322216C9DD000032E7E8 /* KSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReachability.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B32E31F216C9DC410032E7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32E31F916C9DC410032E7E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B32E31EC16C9DC410032E7E8 = {
+			isa = PBXGroup;
+			children = (
+				B32E31FA16C9DC410032E7E8 /* KSReachability */,
+				B32E31F716C9DC410032E7E8 /* Frameworks */,
+				B32E31F616C9DC410032E7E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B32E31F616C9DC410032E7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B32E31F516C9DC410032E7E8 /* libKSReachability.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B32E31F716C9DC410032E7E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B32E31F816C9DC410032E7E8 /* Foundation.framework */,
+				B32E320716C9DC410032E7E8 /* SenTestingKit.framework */,
+				B32E320916C9DC410032E7E8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B32E31FA16C9DC410032E7E8 /* KSReachability */ = {
+			isa = PBXGroup;
+			children = (
+				B32E322116C9DD000032E7E8 /* KSReachability.h */,
+				B32E322216C9DD000032E7E8 /* KSReachability.m */,
+				B32E31FB16C9DC410032E7E8 /* Supporting Files */,
+			);
+			path = KSReachability;
+			sourceTree = "<group>";
+		};
+		B32E31FB16C9DC410032E7E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B32E31FC16C9DC410032E7E8 /* KSReachability-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B32E31F416C9DC410032E7E8 /* KSReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32E321A16C9DC410032E7E8 /* Build configuration list for PBXNativeTarget "KSReachability" */;
+			buildPhases = (
+				B32E31F116C9DC410032E7E8 /* Sources */,
+				B32E31F216C9DC410032E7E8 /* Frameworks */,
+				B32E31F316C9DC410032E7E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSReachability;
+			productName = KSReachability;
+			productReference = B32E31F516C9DC410032E7E8 /* libKSReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B32E31ED16C9DC410032E7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Karl Stenerud";
+			};
+			buildConfigurationList = B32E31F016C9DC410032E7E8 /* Build configuration list for PBXProject "KSReachability" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B32E31EC16C9DC410032E7E8;
+			productRefGroup = B32E31F616C9DC410032E7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B32E31F416C9DC410032E7E8 /* KSReachability */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B32E31F116C9DC410032E7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32E322316C9DD000032E7E8 /* KSReachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B32E321816C9DC410032E7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B32E321916C9DC410032E7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B32E321B16C9DC410032E7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/KSReachability.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSReachability-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B32E321C16C9DC410032E7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/KSReachability.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSReachability-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B32E31F016C9DC410032E7E8 /* Build configuration list for PBXProject "KSReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32E321816C9DC410032E7E8 /* Debug */,
+				B32E321916C9DC410032E7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32E321A16C9DC410032E7E8 /* Build configuration list for PBXNativeTarget "KSReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32E321B16C9DC410032E7E8 /* Debug */,
+				B32E321C16C9DC410032E7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B32E31ED16C9DC410032E7E8 /* Project object */;
+}
