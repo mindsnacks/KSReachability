@@ -7,23 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31DE3B816CCBBC1004F88ED /* KSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B32E322116C9DD000032E7E8 /* KSReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B32E31F916C9DC410032E7E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32E31F816C9DC410032E7E8 /* Foundation.framework */; };
 		B32E322316C9DD000032E7E8 /* KSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E322216C9DD000032E7E8 /* KSReachability.m */; };
-		B32E322416C9DD070032E7E8 /* KSReachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32E322116C9DD000032E7E8 /* KSReachability.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B32E31F316C9DC410032E7E8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				B32E322416C9DD070032E7E8 /* KSReachability.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B32E31F516C9DC410032E7E8 /* libKSReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKSReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +81,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B31DE3B716CCBBB7004F88ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31DE3B816CCBBC1004F88ED /* KSReachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B32E31F416C9DC410032E7E8 /* KSReachability */ = {
 			isa = PBXNativeTarget;
@@ -101,7 +99,7 @@
 			buildPhases = (
 				B32E31F116C9DC410032E7E8 /* Sources */,
 				B32E31F216C9DC410032E7E8 /* Frameworks */,
-				B32E31F316C9DC410032E7E8 /* CopyFiles */,
+				B31DE3B716CCBBB7004F88ED /* Headers */,
 			);
 			buildRules = (
 			);
@@ -210,6 +208,7 @@
 				GCC_PREFIX_HEADER = "KSReachability-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -223,6 +222,7 @@
 				GCC_PREFIX_HEADER = "KSReachability-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
