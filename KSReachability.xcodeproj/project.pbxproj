@@ -202,6 +202,7 @@
 		B32E321B16C9DC410032E7E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/KSReachability.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -216,6 +217,7 @@
 		B32E321C16C9DC410032E7E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/KSReachability.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
