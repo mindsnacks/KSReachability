@@ -23,8 +23,9 @@
 		3964E5351557731400136D58 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3964E5331557731400136D58 /* MainMenu.xib */; };
 		3964E53A1557733600136D58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964E5391557733600136D58 /* SystemConfiguration.framework */; };
 		3964E53C1557734C00136D58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964E53B1557734C00136D58 /* SystemConfiguration.framework */; };
-		3964E5451557736C00136D58 /* KSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3964E5401557736C00136D58 /* KSReachability.m */; };
-		3964E5461557736C00136D58 /* KSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3964E5401557736C00136D58 /* KSReachability.m */; };
+		CBFEECFA170E0BA300624866 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBFEECF9170E0BA300624866 /* Default-568h@2x.png */; };
+		CBFEED1A170F31D000624866 /* libKSReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFEED19170F31D000624866 /* libKSReachability.a */; };
+		CBFEED33170F339800624866 /* libKSReachabilityMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFEED32170F339800624866 /* libKSReachabilityMac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,9 +57,9 @@
 		3964E5341557731400136D58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3964E5391557733600136D58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		3964E53B1557734C00136D58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		3964E53E1557736C00136D58 /* ARCSafe_MemMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = ARCSafe_MemMgmt.h; path = ../ARCSafe_MemMgmt.h; sourceTree = "<group>"; };
-		3964E53F1557736C00136D58 /* KSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = KSReachability.h; path = ../KSReachability.h; sourceTree = "<group>"; };
-		3964E5401557736C00136D58 /* KSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSReachability.m; path = ../KSReachability.m; sourceTree = "<group>"; };
+		CBFEECF9170E0BA300624866 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		CBFEED19170F31D000624866 /* libKSReachability.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKSReachability.a; path = "../KSReachability/build/Release-iphoneos/libKSReachability.a"; sourceTree = "<group>"; };
+		CBFEED32170F339800624866 /* libKSReachabilityMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKSReachabilityMac.a; path = ../KSReachability/build/Release/libKSReachabilityMac.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFEED1A170F31D000624866 /* libKSReachability.a in Frameworks */,
 				3964E53A1557733600136D58 /* SystemConfiguration.framework in Frameworks */,
 				3964E4FE1557730300136D58 /* UIKit.framework in Frameworks */,
 				3964E5001557730300136D58 /* Foundation.framework in Frameworks */,
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFEED33170F339800624866 /* libKSReachabilityMac.a in Frameworks */,
 				3964E53C1557734C00136D58 /* SystemConfiguration.framework in Frameworks */,
 				3964E51F1557731300136D58 /* Cocoa.framework in Frameworks */,
 			);
@@ -88,7 +91,6 @@
 		3964E4EC155772F500136D58 = {
 			isa = PBXGroup;
 			children = (
-				3964E53D1557735C00136D58 /* KSReachability */,
 				3964E5031557730300136D58 /* iOSReachability */,
 				3964E5241557731300136D58 /* MacReachability */,
 				3964E4FC1557730300136D58 /* Frameworks */,
@@ -108,6 +110,8 @@
 		3964E4FC1557730300136D58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBFEED19170F31D000624866 /* libKSReachability.a */,
+				CBFEED32170F339800624866 /* libKSReachabilityMac.a */,
 				3964E5391557733600136D58 /* SystemConfiguration.framework */,
 				3964E4FD1557730300136D58 /* UIKit.framework */,
 				3964E4FF1557730300136D58 /* Foundation.framework */,
@@ -134,10 +138,11 @@
 		3964E5041557730300136D58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3964E5051557730300136D58 /* iOSReachability-Info.plist */,
+				CBFEECF9170E0BA300624866 /* Default-568h@2x.png */,
 				3964E5061557730300136D58 /* InfoPlist.strings */,
-				3964E5091557730300136D58 /* main.m */,
+				3964E5051557730300136D58 /* iOSReachability-Info.plist */,
 				3964E50B1557730300136D58 /* iOSReachability-Prefix.pch */,
+				3964E5091557730300136D58 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,16 +179,6 @@
 				3964E52D1557731400136D58 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3964E53D1557735C00136D58 /* KSReachability */ = {
-			isa = PBXGroup;
-			children = (
-				3964E53E1557736C00136D58 /* ARCSafe_MemMgmt.h */,
-				3964E53F1557736C00136D58 /* KSReachability.h */,
-				3964E5401557736C00136D58 /* KSReachability.m */,
-			);
-			name = KSReachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +224,7 @@
 		3964E4EE155772F500136D58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 3964E4F1155772F500136D58 /* Build configuration list for PBXProject "KSReachability-Examples" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -256,6 +251,7 @@
 			files = (
 				3964E5081557730300136D58 /* InfoPlist.strings in Resources */,
 				3964E5141557730300136D58 /* ViewController.xib in Resources */,
+				CBFEECFA170E0BA300624866 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +275,6 @@
 				3964E50A1557730300136D58 /* main.m in Sources */,
 				3964E50E1557730300136D58 /* AppDelegate.m in Sources */,
 				3964E5111557730300136D58 /* ViewController.m in Sources */,
-				3964E5451557736C00136D58 /* KSReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +284,6 @@
 			files = (
 				3964E52B1557731400136D58 /* main.m in Sources */,
 				3964E5321557731400136D58 /* AppDelegate.m in Sources */,
-				3964E5461557736C00136D58 /* KSReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +338,6 @@
 			buildSettings = {
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
@@ -377,7 +370,6 @@
 			buildSettings = {
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
@@ -474,6 +466,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -506,6 +499,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
