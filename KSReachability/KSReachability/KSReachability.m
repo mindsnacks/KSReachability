@@ -163,6 +163,25 @@ static void onReachabilityChanged(SCNetworkReachabilityRef target,
                 NSLog(@"KSReachability Error: %s: SCNetworkReachabilityScheduleWithRunLoop failed", __PRETTY_FUNCTION__);
                 goto init_failed;
             }
+
+            // If you create a reachability ref using SCNetworkReachabilityCreateWithAddress(),
+            // it won't trigger from the runloop unless you kick it with SCNetworkReachabilityGetFlags()
+            if([hostname length] == 0)
+            {
+                SCNetworkReachabilityFlags flags;
+                if(!SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
+                {
+                    NSLog(@"KSReachability Error: %s: SCNetworkReachabilityGetFlags failed", __PRETTY_FUNCTION__);
+                    goto init_failed;
+                }
+
+                dispatch_async(dispatch_get_main_queue(), ^
+                               {
+                                   as_autoreleasepool_start(pool);
+                                   [self onReachabilityFlagsChanged:flags];
+                                   as_autoreleasepool_end(pool);
+                               });
+            }
         }
     }
     return self;
@@ -250,7 +269,7 @@ init_failed:
     {
         as_autorelease_noref(_onInitializationComplete);
         _onInitializationComplete = [onInitializationComplete copy];
-        if(self.initialized)
+        if(_onInitializationComplete != nil && self.initialized)
         {
             dispatch_async(dispatch_get_main_queue(), ^
                            {
@@ -407,7 +426,7 @@ static void onReachabilityChanged(__unused SCNetworkReachabilityRef target,
                        (allowWWAN || !reachability2.WWANOnly))
                     {
                         reachability2.onReachabilityChanged = nil;
-                        dispatch_async(dispatch_get_main_queue(), block);
+                        block();
                     }
                 }
             };
